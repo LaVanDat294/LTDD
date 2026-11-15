@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:layout_margin="10dp"
+    android:background="@drawable/bg_the">
+    <TextView android:id="@+id/tvBanner" android:layout_width="match_parent"
+        android:layout_height="120dp" android:gravity="center"
+        android:background="@drawable/bg_banner" android:textColor="#FFFFFF"
+        android:textSize="22sp" android:textStyle="bold"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:padding="12dp" android:gravity="center_vertical">
+        <TextView android:id="@+id/tvLogo" android:layout_width="48dp" android:layout_height="48dp"
+            android:gravity="center" android:background="@drawable/bg_tron" android:text="SB"
+            android:textColor="#FFFFFF" android:textStyle="bold"/>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:orientation="vertical"
+            android:layout_marginLeft="10dp" android:layout_marginRight="8dp">
+            <TextView android:id="@+id/tvTen" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:textColor="#0F5B34"
+                android:textSize="16sp" android:textStyle="bold"/>
+            <TextView android:id="@+id/tvDiaChi" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:maxLines="2"
+                android:ellipsize="end" android:textSize="13sp" android:textColor="#333333"/>
+            <TextView android:id="@+id/tvGio" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:textSize="13sp" android:textColor="#0F5B34"/>
+        </LinearLayout>
+        <Button android:id="@+id/btnDat" android:layout_width="wrap_content"
+            android:layout_height="40dp" android:text="DAT LICH" android:textSize="12sp"
+            android:textColor="#FFFFFF" android:background="@drawable/bg_nut_vang"
+            android:focusable="false"/>
+    </LinearLayout>
+</LinearLayout>
